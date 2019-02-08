@@ -44,11 +44,11 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://poser.pugx.org/argentcrusade/forms/version?format=flat
 [ico-license]: https://poser.pugx.org/argentcrusade/forms/license?format=flat
 [ico-travis]: https://api.travis-ci.org/argentcrusade/forms.svg?branch=master
-[ico-styleci]: https://styleci.io/repos/XXX/shield?branch=master&style=flat
+[ico-styleci]: https://styleci.io/repos/169732398/shield?branch=master&style=flat
 [ico-scrutinizer]: https://scrutinizer-ci.com/g/argentcrusade/forms/badges/quality-score.png?b=master
 
 [link-packagist]: https://packagist.org/packages/argentcrusade/forms
 [link-travis]: https://travis-ci.org/argentcrusade/forms
-[link-styleci]: https://styleci.io/repos/XXX
+[link-styleci]: https://styleci.io/repos/169732398
 [link-scrutinizer]: https://scrutinizer-ci.com/g/argentcrusade/forms/
 [link-author]: https://github.com/tzurbaev

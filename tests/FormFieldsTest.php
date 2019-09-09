@@ -84,11 +84,11 @@ class FormFieldsTest extends TestCase
         $this->assertEmpty($field->classes());
 
         $field->withClasses('first second');
-        $this->assertInternalType('array', $field->classList());
+        $this->assertIsArray($field->classList());
         $this->assertSame(['first', 'second'], $field->classList());
 
         $field->withClasses('third fourth', true);
-        $this->assertInternalType('array', $field->classList());
+        $this->assertIsArray($field->classList());
         $this->assertSame(['third', 'fourth'], $field->classList());
 
         $this->assertSame('third fourth', $field->classes());

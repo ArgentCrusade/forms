@@ -2,6 +2,8 @@
 
 namespace ArgentCrusade\Forms;
 
+use Illuminate\Support\Arr;
+
 class FormField
 {
     protected $label = '';
@@ -183,7 +185,7 @@ class FormField
      */
     public function hasAttribute(string $path)
     {
-        return array_has($this->attributes, $path);
+        return Arr::has($this->attributes, $path);
     }
 
     /**
@@ -196,7 +198,7 @@ class FormField
      */
     public function getAttribute(string $path, $default = null)
     {
-        return array_get($this->attributes, $path, $default);
+        return Arr::get($this->attributes, $path, $default);
     }
 
     /**
@@ -232,7 +234,7 @@ class FormField
      */
     public function hasParameter(string $path)
     {
-        return array_has($this->parameters, $path);
+        return Arr::has($this->parameters, $path);
     }
 
     /**
@@ -245,7 +247,7 @@ class FormField
      */
     public function getParameter(string $path, $default = null)
     {
-        return array_get($this->parameters, $path, $default);
+        return Arr::get($this->parameters, $path, $default);
     }
 
     /**

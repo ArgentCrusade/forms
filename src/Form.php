@@ -2,6 +2,7 @@
 
 namespace ArgentCrusade\Forms;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 abstract class Form
@@ -149,7 +150,7 @@ abstract class Form
      */
     public function get(string $path, $default = null)
     {
-        return array_get($this->options(), $path, $default);
+        return Arr::get($this->options(), $path, $default);
     }
 
     /**
@@ -249,7 +250,7 @@ abstract class Form
      */
     public function getField(string $name)
     {
-        return array_get($this->cachedFields(), $name);
+        return Arr::get($this->cachedFields(), $name);
     }
 
     /**
@@ -274,7 +275,7 @@ abstract class Form
      */
     public function fieldValue(string $name, $default = null)
     {
-        $value = array_get($this->cachedValues(), $name, $default);
+        $value = Arr::get($this->cachedValues(), $name, $default);
         $oldValue = old($name);
 
         if ($oldValue && method_exists($this, $mutatorMethod = Str::camel('get_'.$name.'_value'))) {

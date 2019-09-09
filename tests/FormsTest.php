@@ -12,7 +12,7 @@ class FormsTest extends TestCase
      */
     protected $form;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
